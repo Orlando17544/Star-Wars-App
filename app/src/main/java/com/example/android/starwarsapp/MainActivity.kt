@@ -4,6 +4,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.android.starwarsapp.character.CharacterAdapter
+import com.example.android.starwarsapp.character.CharacterListener
 import com.example.android.starwarsapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -21,5 +24,12 @@ class MainActivity : AppCompatActivity() {
         binding.viewModel = viewModel;
 
         binding.lifecycleOwner = this;
+
+        binding.characters.apply {
+            layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false);
+            adapter = CharacterAdapter(CharacterListener { character ->
+                viewModel.displayCharacter(character);
+            })
+        }
     }
 }
