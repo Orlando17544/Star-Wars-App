@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.android.starwarsapp.databinding.CharacterItemBinding
+import com.example.android.starwarsapp.network.Character
 
 class CharacterAdapter(val clickListener: CharacterListener): ListAdapter<Character,
         CharacterAdapter.CharacterViewHolder>(DiffCallback) {
