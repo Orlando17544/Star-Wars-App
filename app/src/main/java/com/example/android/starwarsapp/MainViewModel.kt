@@ -44,6 +44,16 @@ class MainViewModel : ViewModel() {
             CharacterImage("Beru Whitesun lars", R.drawable.beru_whitesun_lars),
             CharacterImage("R5-D4", R.drawable.r5_d4),
             CharacterImage("Biggs Darklighter", R.drawable.biggs_darklighter),
-            CharacterImage("Obi-Wan Kenobi", R.drawable.obi_wan_kenobi)
+            CharacterImage("Obi-Wan Kenobi", R.drawable.obi_wan_kenobi),
+            CharacterImage("Qui-Gon Jinn", R.drawable.qui_gon_jinn),
+            CharacterImage("Nute Gunray", R.drawable.nute_gunray),
+            CharacterImage("Finis Valorum", R.drawable.finis_valorum),
+            CharacterImage("Padmé Amidala", R.drawable.padmé_amidala),
+            CharacterImage("Jar Jar Binks", R.drawable.jar_jar_binks),
+            CharacterImage("Roos Tarpals", R.drawable.roos_tarpals),
+            CharacterImage("Rugor Nass", R.drawable.rugor_nass),
+            CharacterImage("Ric Olié", R.drawable.ric_olié),
+            CharacterImage("Watto", R.drawable.watto),
+            CharacterImage("Sebulba", R.drawable.sebulba))
     }
 }
